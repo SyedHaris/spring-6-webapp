@@ -28,13 +28,4 @@ public class BookController {
         return "books";
     }
 
-    @RequestMapping("/authors")
-    public String getAuthors(Model model) {
-
-        model.addAttribute("authors", authorService.findAll());
-
-        return "authors";
-
-    }
-
 }
