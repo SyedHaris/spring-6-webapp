@@ -13,11 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class BookController {
 
     private final BookService bookService;
-    private final AuthorService authorService;
 
-    public BookController(BookService bookService, AuthorService authorService) {
+    public BookController(BookService bookService) {
         this.bookService = bookService;
-        this.authorService = authorService;
     }
 
     @RequestMapping("/books")
